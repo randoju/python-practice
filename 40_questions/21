@@ -1,0 +1,8 @@
+from collections import Counter
+
+text = input("Enter a string: ")  # Get user input
+
+char_count = Counter(text)  # Count occurrences of each character
+most_common = char_count.most_common(1)[0]  # Get the most common character
+
+print(f"The most common character is '{most_common[0]}' appearing {most_common[1]} times.")
